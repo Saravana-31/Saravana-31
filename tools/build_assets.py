@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Regenerates the profile banner: SVG source in assets/src/, PNG in assets/.
+"""Regenerates every custom graphic: SVG sources in assets/src/, PNGs in assets/.
 
 Requirements: pip install cairosvg pillow
 Fonts (SIL OFL): Space Grotesk (headings) and Inter (body) must be installed so
@@ -97,13 +97,13 @@ def save(name, svg, w, h):
 def banner():
     W, H = 1200, 320
     random.seed(31)
-    s = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Saravana P, AI Engineering and Full-Stack Development">',
+    s = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Saravana P, AI Engineer and Full-Stack Developer">',
          defs(W, H, 900, 160, 380)]
     # left: identity
     s.append(f'<rect x="64" y="64" width="44" height="4" rx="2" fill="{CYAN}"/>')
     s.append(text(62, 138, "Saravana P", 66, TXT, HEAD, 700, extra='letter-spacing="-1"'))
-    s.append(text(64, 186, "AI Engineering × Full-Stack Development", 25, CYAN, HEAD, 600))
-    s.append(text(64, 232, "Building intelligent systems into useful products.", 19, TXT_DIM, BODY, 400))
+    s.append(text(64, 186, "AI Engineer × Full-Stack Developer", 27, CYAN, HEAD, 600))
+    s.append(text(64, 232, "Building intelligent systems. Engineering useful products.", 19, TXT_DIM, BODY, 400))
     s.append(text(64, 270, "B.Tech AI & ML, Kongu Engineering College", 14, TXT_MUTE, BODY, 500))
     # centre: network field (model side)
     layers = [(670, [78, 118, 158, 198, 238]),
@@ -142,5 +142,124 @@ def banner():
     save("profile-banner", "\n".join(s), W, H)
 
 
+# =========================================================================
+# 2. AI ENGINEERING VISUAL  1200 x 480
+# =========================================================================
+def icon(kind, cx, cy):
+    c = CYAN
+    if kind == "doc":
+        return (f'<rect x="{cx - 16}" y="{cy - 20}" width="32" height="40" rx="4" fill="none" stroke="{c}" stroke-width="2"/>'
+                + "".join(f'<line x1="{cx - 9}" y1="{cy - 8 + i * 9}" x2="{cx + 9}" y2="{cy - 8 + i * 9}" stroke="{c}" stroke-width="2" stroke-linecap="round"/>' for i in range(3)))
+    if kind == "nodes":
+        pts = [(cx - 16, cy - 12), (cx - 16, cy + 12), (cx + 16, cy - 12), (cx + 16, cy + 12)]
+        e = "".join(f'<line x1="{a[0]}" y1="{a[1]}" x2="{cx}" y2="{cy}" stroke="{c}" stroke-width="1.5" opacity=".7"/>' for a in pts)
+        return e + "".join(f'<circle cx="{x}" cy="{y}" r="4.5" fill="{PANEL}" stroke="{c}" stroke-width="2"/>' for x, y in pts + [(cx, cy)])
+    if kind == "api":
+        return (f'<path d="M{cx - 8} {cy - 18} q-12 0 -12 12 v4 q0 8 -6 8 q6 0 6 8 v4 q0 12 12 12" fill="none" stroke="{c}" stroke-width="2.2" stroke-linecap="round"/>'
+                f'<path d="M{cx + 8} {cy - 18} q12 0 12 12 v4 q0 8 6 8 q-6 0 -6 8 v4 q0 12 -12 12" fill="none" stroke="{c}" stroke-width="2.2" stroke-linecap="round"/>')
+    if kind == "db":
+        return (f'<ellipse cx="{cx}" cy="{cy - 14}" rx="18" ry="7" fill="none" stroke="{c}" stroke-width="2"/>'
+                f'<path d="M{cx - 18} {cy - 14} v26 c0 4 8 7 18 7 s18 -3 18 -7 v-26" fill="none" stroke="{c}" stroke-width="2"/>'
+                f'<path d="M{cx - 18} {cy - 1} c0 4 8 7 18 7 s18 -3 18 -7" fill="none" stroke="{c}" stroke-width="2"/>')
+    if kind == "ui":
+        return (f'<rect x="{cx - 20}" y="{cy - 16}" width="40" height="32" rx="5" fill="none" stroke="{c}" stroke-width="2"/>'
+                f'<line x1="{cx - 20}" y1="{cy - 7}" x2="{cx + 20}" y2="{cy - 7}" stroke="{c}" stroke-width="2"/>'
+                f'<polyline points="{cx - 12},{cy + 9} {cx - 3},{cy + 1} {cx + 3},{cy + 5} {cx + 12},{cy - 2}" fill="none" stroke="{c}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>')
+    return ""
+
+
+def ai_visual():
+    W, H = 1200, 480
+    s = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Five-stage map from data to models to services to storage to interface">',
+         defs(W, H, 600, 250, 520)]
+    s.append(text(48, 76, "From raw data to a usable product", 36, TXT, HEAD, 700, extra='letter-spacing="-0.5"'))
+    s.append(text(48, 110, "The layers behind most of the projects on this page.", 17, TXT_DIM))
+    stages = [
+        ("doc", "Data", ["HTML snapshots,", "user input, datasets"]),
+        ("nodes", "Models", ["Groq and Ollama LLMs", "TensorFlow, scikit-learn"]),
+        ("api", "Services", ["Flask, FastAPI,", "Express"]),
+        ("db", "Storage", ["MongoDB, Firebase,", "MySQL"]),
+        ("ui", "Interface", ["React, Next.js,", "Tailwind CSS"]),
+    ]
+    bw, gap, x0, y0, bh = 188, 42, 46, 150, 206
+    for i, (ic, name, cap) in enumerate(stages):
+        x = x0 + i * (bw + gap)
+        hi = i == 1
+        s.append(f'<rect x="{x}" y="{y0}" width="{bw}" height="{bh}" rx="14" fill="{PANEL}" stroke="{CYAN if hi else LINE}" stroke-width="{2 if hi else 1.2}"/>')
+        s.append(icon(ic, x + bw // 2, y0 + 62))
+        s.append(text(x + bw // 2, y0 + 130, name, 22, TXT, HEAD, 600, "middle"))
+        for j, line in enumerate(cap):
+            s.append(text(x + bw // 2, y0 + 158 + j * 20, line, 13.5, TXT_DIM, BODY, 400, "middle"))
+        if i < len(stages) - 1:
+            ax = x + bw + 6
+            s.append(f'<line x1="{ax}" y1="{y0 + bh // 2}" x2="{ax + gap - 12}" y2="{y0 + bh // 2}" stroke="{CYAN}" stroke-width="2" marker-end="url(#arrow)"/>')
+    by = y0 + bh + 26
+
+    def bracket(xa, xb, label, col):
+        return (f'<path d="M{xa} {by} v10 H{xb} v-10" fill="none" stroke="{col}" stroke-width="2"/>'
+                + text((xa + xb) / 2, by + 36, label, 17, col, HEAD, 600, "middle"))
+
+    s.append(bracket(x0, x0 + 2 * bw + gap, "AI engineering", CYAN))
+    s.append(bracket(x0 + 2 * (bw + gap), x0 + 5 * bw + 4 * gap, "Full-stack engineering", BLUE))
+    s.append(text(W - 48, H - 22, "A conceptual map of the stack, not a single system.", 12.5, TXT_MUTE, BODY, 400, "end"))
+    s.append("</svg>")
+    save("ai-engineering-visual", "\n".join(s), W, H)
+
+
+# =========================================================================
+# 3. PROJECT SHOWCASE  1200 x 600  (no screenshots; real repos only)
+# =========================================================================
+PROJECTS = [
+    ("Working prototype", CYAN, "SmartSpend AI",
+     "Chat assistant that turns plain-language expenses into saved transactions.",
+     ["React", "Flask", "Groq", "Firebase"], "Saravana-31/Smart-Spend"),
+    ("Working prototype", CYAN, "Intelligence Extraction Agent",
+     "Pulls structured company data from offline sites: rules first, LLM second.",
+     ["FastAPI", "Pydantic", "Ollama", "React"], "Saravana-31/Autonomous-Intel-Agent"),
+    ("Hackathon build", BLUE, "PM Internship Recommender",
+     "Skill-first internship matching with a Groq chat on every listing.",
+     ["React", "Express", "Flask", "Groq"], "Saravana-31/SIH_PMIRS"),
+    ("Prototype", BLUE, "SaviAI",
+     "Interview-prep platform with AI-generated questions and mock interviews.",
+     ["Next.js", "MongoDB", "NextAuth", "llama.cpp"], "Saravana-31/Savi_AI"),
+    ("Team contribution", "#a78bfa", "Mahamitra",
+     "Client e-commerce platform. I worked on feature development and testing.",
+     ["React", "TypeScript", "Supabase", "Razorpay"], "sanjayn29/Mahamitra-E-commence"),
+    ("Self-built", "#34d399", "Udyam Registration Portal",
+     "Multi-step registration flow with an Express API and Jest tests.",
+     ["React", "Express", "TypeScript", "Jest"], "Saravana-31/Udyam_Frontend"),
+]
+
+
+def showcase():
+    W, H = 1200, 600
+    s = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Six selected projects with status and stack">',
+         defs(W, H, 600, 300, 600)]
+    s.append(text(32, 52, "Selected work", 30, TXT, HEAD, 700, extra='letter-spacing="-0.4"'))
+    s.append(text(W - 32, 52, "Status labels reflect what the repositories show.", 14, TXT_MUTE, BODY, 400, "end"))
+    cw, ch, gx, gy, x0, y0 = 368, 236, 24, 24, 32, 76
+    for i, (status, col, name, desc, stack, repo) in enumerate(PROJECTS):
+        x = x0 + (i % 3) * (cw + gx)
+        y = y0 + (i // 3) * (ch + gy)
+        s.append(f'<rect x="{x}" y="{y}" width="{cw}" height="{ch}" rx="14" fill="{PANEL}" stroke="{LINE}" stroke-width="1.2"/>')
+        s.append(f'<rect x="{x}" y="{y + 22}" width="4" height="30" rx="2" fill="{col}"/>')
+        s.append(text(x + 22, y + 44, status, 13.5, col, BODY, 600))
+        s.append(text(x + 22, y + 88, name, 23, TXT, HEAD, 700, extra='letter-spacing="-0.3"'))
+        for j, line in enumerate(wrap(desc, 14.5, cw - 44)):
+            s.append(text(x + 22, y + 120 + j * 22, line, 14.5, TXT_DIM))
+        px = x + 22
+        for tag in stack:
+            w = tw(tag, 12.5, BODY, "Medium") + 22
+            s.append(f'<rect x="{px:.1f}" y="{y + 164}" width="{w:.1f}" height="26" rx="13" fill="{PANEL_HI}" stroke="{LINE_HI}" stroke-width="1"/>')
+            s.append(text(f"{px + w / 2:.1f}", y + 181.5, tag, 12.5, TXT, BODY, 500, "middle"))
+            px += w + 8
+        s.append(f'<line x1="{x + 22}" y1="{y + 204}" x2="{x + cw - 22}" y2="{y + 204}" stroke="{LINE}" stroke-width="1"/>')
+        s.append(text(x + 22, y + 223, "github.com/" + repo, 12, TXT_MUTE, BODY, 400))
+    s.append("</svg>")
+    save("project-showcase", "\n".join(s), W, H)
+
+
 if __name__ == "__main__":
     banner()
+    ai_visual()
+    showcase()
