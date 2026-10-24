@@ -47,3 +47,14 @@ Not featured: course/template repos (`skills-copilot-codespaces-vscode`, `copilo
 4. Fix the `Smart-Spend` README so it matches the code, and add a screenshot.
 5. Confirm project status labels and your contribution to each team project (SIH, SaviAI) and edit the README text if needed.
 6. Optional: self-host `github-readme-stats` on your own Vercel account if the public cards rate-limit.
+
+---
+
+# Update 3: minimal README
+
+- README cut from 322 lines / 17 KB / 43 images / 12 sections to 93 lines / 5 KB / 7 images / 7 sections.
+- Removed: `README-test.md`, `README-test2.md`, `README_ASSET_NOTES.md`, and four illustrations that repeated the text (`ai-engineering-visual`, `project-showcase`, `smartspend-architecture`, plus unused screenshots). Git history keeps all of them.
+- Removed widgets: typing headline, GitHub stats card, top-languages card, activity graph, 30 shields.io badges (stack is now plain text). Kept: contribution streak and LeetCode card, both unchanged from the previous version and untested from this environment.
+- Banner re-rendered with the wording "AI Engineering × Full-Stack Development / Building intelligent systems into useful products."
+- GIF: only `assets/saviai-demo.gif` (6.4 s, 588 KB), a real recording of SaviAI's landing-page carousel from a local run. SmartSpend, Mahamitra and BidBank workflows need Firebase, Supabase or MongoDB, which could not be reached, so they use genuine static screenshots.
+- SaviAI's guest mode only reaches the landing-style /welcome page; mock interview, aptitude and coding redirect back to sign-in, so no deeper workflow could be recorded.
