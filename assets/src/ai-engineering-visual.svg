@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="480" viewBox="0 0 1200 480" role="img" aria-label="Five-stage map from data to models to services to storage to interface">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#040912"/><stop offset="1" stop-color="#0a1830"/></linearGradient>
+  <radialGradient id="glow" cx="600" cy="250" r="520" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#22d3ee" stop-opacity="0.16"/><stop offset="1" stop-color="#22d3ee" stop-opacity="0"/></radialGradient>
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#14294a" stroke-width="1" opacity="0.55"/></pattern>
+  <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 1L9 5L0 9z" fill="#22d3ee"/></marker>
+</defs>
+<rect width="1200" height="480" fill="url(#bg)"/><rect width="1200" height="480" fill="url(#grid)"/><rect width="1200" height="480" fill="url(#glow)"/>
+<text x="48" y="76" font-family="Space Grotesk, sans-serif" font-size="36" font-weight="700" fill="#e6f1ff" text-anchor="start" letter-spacing="-0.5">From raw data to a usable product</text>
+<text x="48" y="110" font-family="Inter, sans-serif" font-size="17" font-weight="400" fill="#9fb3c8" text-anchor="start" >The layers behind most of the projects on this page.</text>
+<rect x="46" y="150" width="188" height="206" rx="14" fill="#0b1a33" stroke="#1b3f68" stroke-width="1.2"/>
+<rect x="124" y="192" width="32" height="40" rx="4" fill="none" stroke="#22d3ee" stroke-width="2"/><line x1="131" y1="204" x2="149" y2="204" stroke="#22d3ee" stroke-width="2" stroke-linecap="round"/><line x1="131" y1="213" x2="149" y2="213" stroke="#22d3ee" stroke-width="2" stroke-linecap="round"/><line x1="131" y1="222" x2="149" y2="222" stroke="#22d3ee" stroke-width="2" stroke-linecap="round"/>
+<text x="140" y="280" font-family="Space Grotesk, sans-serif" font-size="22" font-weight="600" fill="#e6f1ff" text-anchor="middle" >Data</text>
+<text x="140" y="308" font-family="Inter, sans-serif" font-size="13.5" font-weight="400" fill="#9fb3c8" text-anchor="middle" >HTML snapshots,</text>
+<text x="140" y="328" font-family="Inter, sans-serif" font-size="13.5" font-weight="400" fill="#9fb3c8" text-anchor="middle" >user input, datasets</text>
+<line x1="240" y1="253" x2="270" y2="253" stroke="#22d3ee" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="276" y="150" width="188" height="206" rx="14" fill="#0b1a33" stroke="#22d3ee" stroke-width="2"/>
+<line x1="354" y1="200" x2="370" y2="212" stroke="#22d3ee" stroke-width="1.5" opacity=".7"/><line x1="354" y1="224" x2="370" y2="212" stroke="#22d3ee" stroke-width="1.5" opacity=".7"/><line x1="386" y1="200" x2="370" y2="212" stroke="#22d3ee" stroke-width="1.5" opacity=".7"/><line x1="386" y1="224" x2="370" y2="212" stroke="#22d3ee" stroke-width="1.5" opacity=".7"/><circle cx="354" cy="200" r="4.5" fill="#0b1a33" stroke="#22d3ee" stroke-width="2"/><circle cx="354" cy="224" r="4.5" fill="#0b1a33" stroke="#22d3ee" stroke-width="2"/><circle cx="386" cy="200" r="4.5" fill="#0b1a33" stroke="#22d3ee" stroke-width="2"/><circle cx="386" cy="224" r="4.5" fill="#0b1a33" stroke="#22d3ee" stroke-width="2"/><circle cx="370" cy="212" r="4.5" fill="#0b1a33" stroke="#22d3ee" stroke-width="2"/>
+<text x="370" y="280" font-family="Space Grotesk, sans-serif" font-size="22" font-weight="600" fill="#e6f1ff" text-anchor="middle" >Models</text>
+<text x="370" y="308" font-family="Inter, sans-serif" font-size="13.5" font-weight="400" fill="#9fb3c8" text-anchor="middle" >Groq and Ollama LLMs</text>
+<text x="370" y="328" font-family="Inter, sans-serif" font-size="13.5" font-weight="400" fill="#9fb3c8" text-anchor="middle" >TensorFlow, scikit-learn</text>
+<line x1="470" y1="253" x2="500" y2="253" stroke="#22d3ee" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="506" y="150" width="188" height="206" rx="14" fill="#0b1a33" stroke="#1b3f68" stroke-width="1.2"/>
+<path d="M592 194 q-12 0 -12 12 v4 q0 8 -6 8 q6 0 6 8 v4 q0 12 12 12" fill="none" stroke="#22d3ee" stroke-width="2.2" stroke-linecap="round"/><path d="M608 194 q12 0 12 12 v4 q0 8 6 8 q-6 0 -6 8 v4 q0 12 -12 12" fill="none" stroke="#22d3ee" stroke-width="2.2" stroke-linecap="round"/>
+<text x="600" y="280" font-family="Space Grotesk, sans-serif" font-size="22" font-weight="600" fill="#e6f1ff" text-anchor="middle" >Services</text>
+<text x="600" y="308" font-family="Inter, sans-serif" font-size="13.5" font-weight="400" fill="#9fb3c8" text-anchor="middle" >Flask, FastAPI,</text>
+<text x="600" y="328" font-family="Inter, sans-serif" font-size="13.5" font-weight="400" fill="#9fb3c8" text-anchor="middle" >Express</text>
+<line x1="700" y1="253" x2="730" y2="253" stroke="#22d3ee" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="736" y="150" width="188" height="206" rx="14" fill="#0b1a33" stroke="#1b3f68" stroke-width="1.2"/>
+<ellipse cx="830" cy="198" rx="18" ry="7" fill="none" stroke="#22d3ee" stroke-width="2"/><path d="M812 198 v26 c0 4 8 7 18 7 s18 -3 18 -7 v-26" fill="none" stroke="#22d3ee" stroke-width="2"/><path d="M812 211 c0 4 8 7 18 7 s18 -3 18 -7" fill="none" stroke="#22d3ee" stroke-width="2"/>
+<text x="830" y="280" font-family="Space Grotesk, sans-serif" font-size="22" font-weight="600" fill="#e6f1ff" text-anchor="middle" >Storage</text>
+<text x="830" y="308" font-family="Inter, sans-serif" font-size="13.5" font-weight="400" fill="#9fb3c8" text-anchor="middle" >MongoDB, Firebase,</text>
+<text x="830" y="328" font-family="Inter, sans-serif" font-size="13.5" font-weight="400" fill="#9fb3c8" text-anchor="middle" >MySQL</text>
+<line x1="930" y1="253" x2="960" y2="253" stroke="#22d3ee" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="966" y="150" width="188" height="206" rx="14" fill="#0b1a33" stroke="#1b3f68" stroke-width="1.2"/>
+<rect x="1040" y="196" width="40" height="32" rx="5" fill="none" stroke="#22d3ee" stroke-width="2"/><line x1="1040" y1="205" x2="1080" y2="205" stroke="#22d3ee" stroke-width="2"/><polyline points="1048,221 1057,213 1063,217 1072,210" fill="none" stroke="#22d3ee" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1060" y="280" font-family="Space Grotesk, sans-serif" font-size="22" font-weight="600" fill="#e6f1ff" text-anchor="middle" >Interface</text>
+<text x="1060" y="308" font-family="Inter, sans-serif" font-size="13.5" font-weight="400" fill="#9fb3c8" text-anchor="middle" >React, Next.js,</text>
+<text x="1060" y="328" font-family="Inter, sans-serif" font-size="13.5" font-weight="400" fill="#9fb3c8" text-anchor="middle" >Tailwind CSS</text>
+<path d="M46 382 v10 H464 v-10" fill="none" stroke="#22d3ee" stroke-width="2"/><text x="255.0" y="418" font-family="Space Grotesk, sans-serif" font-size="17" font-weight="600" fill="#22d3ee" text-anchor="middle" >AI engineering</text>
+<path d="M506 382 v10 H1154 v-10" fill="none" stroke="#60a5fa" stroke-width="2"/><text x="830.0" y="418" font-family="Space Grotesk, sans-serif" font-size="17" font-weight="600" fill="#60a5fa" text-anchor="middle" >Full-stack engineering</text>
+<text x="1152" y="458" font-family="Inter, sans-serif" font-size="12.5" font-weight="400" fill="#6f8aa8" text-anchor="end" >A conceptual map of the stack, not a single system.</text>
+</svg>
