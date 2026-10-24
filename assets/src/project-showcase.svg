@@ -1,107 +1,54 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600" role="img" aria-label="Six selected projects with status and stack">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640" role="img" aria-label="Priority projects: SmartSpend AI, Mahamitra, SaviAI and BidBank">
 <defs>
   <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#040912"/><stop offset="1" stop-color="#0a1830"/></linearGradient>
-  <radialGradient id="glow" cx="600" cy="300" r="600" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#22d3ee" stop-opacity="0.16"/><stop offset="1" stop-color="#22d3ee" stop-opacity="0"/></radialGradient>
+  <radialGradient id="glow" cx="400" cy="320" r="520" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#22d3ee" stop-opacity="0.16"/><stop offset="1" stop-color="#22d3ee" stop-opacity="0"/></radialGradient>
   <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#14294a" stroke-width="1" opacity="0.55"/></pattern>
   <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 1L9 5L0 9z" fill="#22d3ee"/></marker>
 </defs>
-<rect width="1200" height="600" fill="url(#bg)"/><rect width="1200" height="600" fill="url(#grid)"/><rect width="1200" height="600" fill="url(#glow)"/>
+<rect width="1200" height="640" fill="url(#bg)"/><rect width="1200" height="640" fill="url(#grid)"/><rect width="1200" height="640" fill="url(#glow)"/>
 <text x="32" y="52" font-family="Space Grotesk, sans-serif" font-size="30" font-weight="700" fill="#e6f1ff" text-anchor="start" letter-spacing="-0.4">Selected work</text>
 <text x="1168" y="52" font-family="Inter, sans-serif" font-size="14" font-weight="400" fill="#6f8aa8" text-anchor="end" >Status labels reflect what the repositories show.</text>
-<rect x="32" y="76" width="368" height="236" rx="14" fill="#0b1a33" stroke="#1b3f68" stroke-width="1.2"/>
-<rect x="32" y="98" width="4" height="30" rx="2" fill="#22d3ee"/>
-<text x="54" y="120" font-family="Inter, sans-serif" font-size="13.5" font-weight="600" fill="#22d3ee" text-anchor="start" >Working prototype</text>
-<text x="54" y="164" font-family="Space Grotesk, sans-serif" font-size="23" font-weight="700" fill="#e6f1ff" text-anchor="start" letter-spacing="-0.3">SmartSpend AI</text>
-<text x="54" y="196" font-family="Inter, sans-serif" font-size="14.5" font-weight="400" fill="#9fb3c8" text-anchor="start" >Chat assistant that turns plain-language</text>
-<text x="54" y="218" font-family="Inter, sans-serif" font-size="14.5" font-weight="400" fill="#9fb3c8" text-anchor="start" >expenses into saved transactions.</text>
-<rect x="54.0" y="240" width="56.0" height="26" rx="13" fill="#0f2447" stroke="#2a6ea0" stroke-width="1"/>
-<text x="82.0" y="257.5" font-family="Inter, sans-serif" font-size="12.5" font-weight="500" fill="#e6f1ff" text-anchor="middle" >React</text>
-<rect x="118.0" y="240" width="53.3" height="26" rx="13" fill="#0f2447" stroke="#2a6ea0" stroke-width="1"/>
-<text x="144.6" y="257.5" font-family="Inter, sans-serif" font-size="12.5" font-weight="500" fill="#e6f1ff" text-anchor="middle" >Flask</text>
-<rect x="179.3" y="240" width="51.2" height="26" rx="13" fill="#0f2447" stroke="#2a6ea0" stroke-width="1"/>
-<text x="204.9" y="257.5" font-family="Inter, sans-serif" font-size="12.5" font-weight="500" fill="#e6f1ff" text-anchor="middle" >Groq</text>
-<rect x="238.5" y="240" width="73.5" height="26" rx="13" fill="#0f2447" stroke="#2a6ea0" stroke-width="1"/>
-<text x="275.2" y="257.5" font-family="Inter, sans-serif" font-size="12.5" font-weight="500" fill="#e6f1ff" text-anchor="middle" >Firebase</text>
-<line x1="54" y1="280" x2="378" y2="280" stroke="#1b3f68" stroke-width="1"/>
-<text x="54" y="299" font-family="Inter, sans-serif" font-size="12" font-weight="400" fill="#6f8aa8" text-anchor="start" >github.com/Saravana-31/Smart-Spend</text>
-<rect x="424" y="76" width="368" height="236" rx="14" fill="#0b1a33" stroke="#1b3f68" stroke-width="1.2"/>
-<rect x="424" y="98" width="4" height="30" rx="2" fill="#22d3ee"/>
-<text x="446" y="120" font-family="Inter, sans-serif" font-size="13.5" font-weight="600" fill="#22d3ee" text-anchor="start" >Working prototype</text>
-<text x="446" y="164" font-family="Space Grotesk, sans-serif" font-size="23" font-weight="700" fill="#e6f1ff" text-anchor="start" letter-spacing="-0.3">Intelligence Extraction Agent</text>
-<text x="446" y="196" font-family="Inter, sans-serif" font-size="14.5" font-weight="400" fill="#9fb3c8" text-anchor="start" >Pulls structured company data from offline</text>
-<text x="446" y="218" font-family="Inter, sans-serif" font-size="14.5" font-weight="400" fill="#9fb3c8" text-anchor="start" >sites: rules first, LLM second.</text>
-<rect x="446.0" y="240" width="67.4" height="26" rx="13" fill="#0f2447" stroke="#2a6ea0" stroke-width="1"/>
-<text x="479.7" y="257.5" font-family="Inter, sans-serif" font-size="12.5" font-weight="500" fill="#e6f1ff" text-anchor="middle" >FastAPI</text>
-<rect x="521.4" y="240" width="73.9" height="26" rx="13" fill="#0f2447" stroke="#2a6ea0" stroke-width="1"/>
-<text x="558.4" y="257.5" font-family="Inter, sans-serif" font-size="12.5" font-weight="500" fill="#e6f1ff" text-anchor="middle" >Pydantic</text>
-<rect x="603.4" y="240" width="63.2" height="26" rx="13" fill="#0f2447" stroke="#2a6ea0" stroke-width="1"/>
-<text x="635.0" y="257.5" font-family="Inter, sans-serif" font-size="12.5" font-weight="500" fill="#e6f1ff" text-anchor="middle" >Ollama</text>
-<rect x="674.6" y="240" width="56.0" height="26" rx="13" fill="#0f2447" stroke="#2a6ea0" stroke-width="1"/>
-<text x="702.5" y="257.5" font-family="Inter, sans-serif" font-size="12.5" font-weight="500" fill="#e6f1ff" text-anchor="middle" >React</text>
-<line x1="446" y1="280" x2="770" y2="280" stroke="#1b3f68" stroke-width="1"/>
-<text x="446" y="299" font-family="Inter, sans-serif" font-size="12" font-weight="400" fill="#6f8aa8" text-anchor="start" >github.com/Saravana-31/Autonomous-Intel-Agent</text>
-<rect x="816" y="76" width="368" height="236" rx="14" fill="#0b1a33" stroke="#1b3f68" stroke-width="1.2"/>
-<rect x="816" y="98" width="4" height="30" rx="2" fill="#60a5fa"/>
-<text x="838" y="120" font-family="Inter, sans-serif" font-size="13.5" font-weight="600" fill="#60a5fa" text-anchor="start" >Hackathon build</text>
-<text x="838" y="164" font-family="Space Grotesk, sans-serif" font-size="23" font-weight="700" fill="#e6f1ff" text-anchor="start" letter-spacing="-0.3">PM Internship Recommender</text>
-<text x="838" y="196" font-family="Inter, sans-serif" font-size="14.5" font-weight="400" fill="#9fb3c8" text-anchor="start" >Skill-first internship matching with a Groq chat</text>
-<text x="838" y="218" font-family="Inter, sans-serif" font-size="14.5" font-weight="400" fill="#9fb3c8" text-anchor="start" >on every listing.</text>
-<rect x="838.0" y="240" width="56.0" height="26" rx="13" fill="#0f2447" stroke="#2a6ea0" stroke-width="1"/>
-<text x="866.0" y="257.5" font-family="Inter, sans-serif" font-size="12.5" font-weight="500" fill="#e6f1ff" text-anchor="middle" >React</text>
-<rect x="902.0" y="240" width="69.6" height="26" rx="13" fill="#0f2447" stroke="#2a6ea0" stroke-width="1"/>
-<text x="936.8" y="257.5" font-family="Inter, sans-serif" font-size="12.5" font-weight="500" fill="#e6f1ff" text-anchor="middle" >Express</text>
-<rect x="979.6" y="240" width="53.3" height="26" rx="13" fill="#0f2447" stroke="#2a6ea0" stroke-width="1"/>
-<text x="1006.3" y="257.5" font-family="Inter, sans-serif" font-size="12.5" font-weight="500" fill="#e6f1ff" text-anchor="middle" >Flask</text>
-<rect x="1040.9" y="240" width="51.2" height="26" rx="13" fill="#0f2447" stroke="#2a6ea0" stroke-width="1"/>
-<text x="1066.5" y="257.5" font-family="Inter, sans-serif" font-size="12.5" font-weight="500" fill="#e6f1ff" text-anchor="middle" >Groq</text>
-<line x1="838" y1="280" x2="1162" y2="280" stroke="#1b3f68" stroke-width="1"/>
-<text x="838" y="299" font-family="Inter, sans-serif" font-size="12" font-weight="400" fill="#6f8aa8" text-anchor="start" >github.com/Saravana-31/SIH_PMIRS</text>
-<rect x="32" y="336" width="368" height="236" rx="14" fill="#0b1a33" stroke="#1b3f68" stroke-width="1.2"/>
-<rect x="32" y="358" width="4" height="30" rx="2" fill="#60a5fa"/>
-<text x="54" y="380" font-family="Inter, sans-serif" font-size="13.5" font-weight="600" fill="#60a5fa" text-anchor="start" >Prototype</text>
-<text x="54" y="424" font-family="Space Grotesk, sans-serif" font-size="23" font-weight="700" fill="#e6f1ff" text-anchor="start" letter-spacing="-0.3">SaviAI</text>
-<text x="54" y="456" font-family="Inter, sans-serif" font-size="14.5" font-weight="400" fill="#9fb3c8" text-anchor="start" >Interview-prep platform with AI-generated</text>
-<text x="54" y="478" font-family="Inter, sans-serif" font-size="14.5" font-weight="400" fill="#9fb3c8" text-anchor="start" >questions and mock interviews.</text>
-<rect x="54.0" y="500" width="63.7" height="26" rx="13" fill="#0f2447" stroke="#2a6ea0" stroke-width="1"/>
-<text x="85.8" y="517.5" font-family="Inter, sans-serif" font-size="12.5" font-weight="500" fill="#e6f1ff" text-anchor="middle" >Next.js</text>
-<rect x="125.7" y="500" width="81.0" height="26" rx="13" fill="#0f2447" stroke="#2a6ea0" stroke-width="1"/>
-<text x="166.1" y="517.5" font-family="Inter, sans-serif" font-size="12.5" font-weight="500" fill="#e6f1ff" text-anchor="middle" >MongoDB</text>
-<rect x="214.6" y="500" width="78.1" height="26" rx="13" fill="#0f2447" stroke="#2a6ea0" stroke-width="1"/>
-<text x="253.7" y="517.5" font-family="Inter, sans-serif" font-size="12.5" font-weight="500" fill="#e6f1ff" text-anchor="middle" >NextAuth</text>
-<rect x="300.8" y="500" width="80.1" height="26" rx="13" fill="#0f2447" stroke="#2a6ea0" stroke-width="1"/>
-<text x="340.8" y="517.5" font-family="Inter, sans-serif" font-size="12.5" font-weight="500" fill="#e6f1ff" text-anchor="middle" >llama.cpp</text>
-<line x1="54" y1="540" x2="378" y2="540" stroke="#1b3f68" stroke-width="1"/>
-<text x="54" y="559" font-family="Inter, sans-serif" font-size="12" font-weight="400" fill="#6f8aa8" text-anchor="start" >github.com/Saravana-31/Savi_AI</text>
-<rect x="424" y="336" width="368" height="236" rx="14" fill="#0b1a33" stroke="#1b3f68" stroke-width="1.2"/>
-<rect x="424" y="358" width="4" height="30" rx="2" fill="#a78bfa"/>
-<text x="446" y="380" font-family="Inter, sans-serif" font-size="13.5" font-weight="600" fill="#a78bfa" text-anchor="start" >Team contribution</text>
-<text x="446" y="424" font-family="Space Grotesk, sans-serif" font-size="23" font-weight="700" fill="#e6f1ff" text-anchor="start" letter-spacing="-0.3">Mahamitra</text>
-<text x="446" y="456" font-family="Inter, sans-serif" font-size="14.5" font-weight="400" fill="#9fb3c8" text-anchor="start" >Client e-commerce platform. I worked on</text>
-<text x="446" y="478" font-family="Inter, sans-serif" font-size="14.5" font-weight="400" fill="#9fb3c8" text-anchor="start" >feature development and testing.</text>
-<rect x="446.0" y="500" width="56.0" height="26" rx="13" fill="#0f2447" stroke="#2a6ea0" stroke-width="1"/>
-<text x="474.0" y="517.5" font-family="Inter, sans-serif" font-size="12.5" font-weight="500" fill="#e6f1ff" text-anchor="middle" >React</text>
-<rect x="510.0" y="500" width="87.0" height="26" rx="13" fill="#0f2447" stroke="#2a6ea0" stroke-width="1"/>
-<text x="553.5" y="517.5" font-family="Inter, sans-serif" font-size="12.5" font-weight="500" fill="#e6f1ff" text-anchor="middle" >TypeScript</text>
-<rect x="605.0" y="500" width="81.6" height="26" rx="13" fill="#0f2447" stroke="#2a6ea0" stroke-width="1"/>
-<text x="645.7" y="517.5" font-family="Inter, sans-serif" font-size="12.5" font-weight="500" fill="#e6f1ff" text-anchor="middle" >Supabase</text>
-<rect x="694.5" y="500" width="78.4" height="26" rx="13" fill="#0f2447" stroke="#2a6ea0" stroke-width="1"/>
-<text x="733.7" y="517.5" font-family="Inter, sans-serif" font-size="12.5" font-weight="500" fill="#e6f1ff" text-anchor="middle" >Razorpay</text>
-<line x1="446" y1="540" x2="770" y2="540" stroke="#1b3f68" stroke-width="1"/>
-<text x="446" y="559" font-family="Inter, sans-serif" font-size="12" font-weight="400" fill="#6f8aa8" text-anchor="start" >github.com/sanjayn29/Mahamitra-E-commence</text>
-<rect x="816" y="336" width="368" height="236" rx="14" fill="#0b1a33" stroke="#1b3f68" stroke-width="1.2"/>
-<rect x="816" y="358" width="4" height="30" rx="2" fill="#34d399"/>
-<text x="838" y="380" font-family="Inter, sans-serif" font-size="13.5" font-weight="600" fill="#34d399" text-anchor="start" >Self-built</text>
-<text x="838" y="424" font-family="Space Grotesk, sans-serif" font-size="23" font-weight="700" fill="#e6f1ff" text-anchor="start" letter-spacing="-0.3">Udyam Registration Portal</text>
-<text x="838" y="456" font-family="Inter, sans-serif" font-size="14.5" font-weight="400" fill="#9fb3c8" text-anchor="start" >Multi-step registration flow with an Express</text>
-<text x="838" y="478" font-family="Inter, sans-serif" font-size="14.5" font-weight="400" fill="#9fb3c8" text-anchor="start" >API and Jest tests.</text>
-<rect x="838.0" y="500" width="56.0" height="26" rx="13" fill="#0f2447" stroke="#2a6ea0" stroke-width="1"/>
-<text x="866.0" y="517.5" font-family="Inter, sans-serif" font-size="12.5" font-weight="500" fill="#e6f1ff" text-anchor="middle" >React</text>
-<rect x="902.0" y="500" width="69.6" height="26" rx="13" fill="#0f2447" stroke="#2a6ea0" stroke-width="1"/>
-<text x="936.8" y="517.5" font-family="Inter, sans-serif" font-size="12.5" font-weight="500" fill="#e6f1ff" text-anchor="middle" >Express</text>
-<rect x="979.6" y="500" width="87.0" height="26" rx="13" fill="#0f2447" stroke="#2a6ea0" stroke-width="1"/>
-<text x="1023.1" y="517.5" font-family="Inter, sans-serif" font-size="12.5" font-weight="500" fill="#e6f1ff" text-anchor="middle" >TypeScript</text>
-<rect x="1074.6" y="500" width="47.5" height="26" rx="13" fill="#0f2447" stroke="#2a6ea0" stroke-width="1"/>
-<text x="1098.4" y="517.5" font-family="Inter, sans-serif" font-size="12.5" font-weight="500" fill="#e6f1ff" text-anchor="middle" >Jest</text>
-<line x1="838" y1="540" x2="1162" y2="540" stroke="#1b3f68" stroke-width="1"/>
-<text x="838" y="559" font-family="Inter, sans-serif" font-size="12" font-weight="400" fill="#6f8aa8" text-anchor="start" >github.com/Saravana-31/Udyam_Frontend</text>
+<rect x="32" y="76" width="584" height="532" rx="16" fill="#0b1a33" stroke="#22d3ee" stroke-width="1.6"/>
+<rect x="32" y="102" width="5" height="34" rx="2.5" fill="#22d3ee"/>
+<text x="60" y="126" font-family="Space Grotesk, sans-serif" font-size="26" font-weight="700" fill="#22d3ee" text-anchor="start" >1</text>
+<text x="94" y="126" font-family="Inter, sans-serif" font-size="15" font-weight="600" fill="#22d3ee" text-anchor="start" >Working prototype</text>
+<text x="60" y="188" font-family="Space Grotesk, sans-serif" font-size="44" font-weight="700" fill="#e6f1ff" text-anchor="start" letter-spacing="-0.8">SmartSpend AI</text>
+<text x="60" y="228" font-family="Inter, sans-serif" font-size="16" font-weight="400" fill="#9fb3c8" text-anchor="start" >Tell the assistant what you spent. Pattern rules turn the message into</text><text x="60" y="252" font-family="Inter, sans-serif" font-size="16" font-weight="400" fill="#9fb3c8" text-anchor="start" >a categorized transaction saved to Firebase; a Groq-hosted Llama 3.1</text><text x="60" y="276" font-family="Inter, sans-serif" font-size="16" font-weight="400" fill="#9fb3c8" text-anchor="start" >model handles the rest of the conversation.</text>
+<rect x="60" y="326" width="150" height="74" rx="10" fill="#0f2447" stroke="#2a6ea0" stroke-width="1.2"/>
+<text x="135.0" y="358" font-family="Space Grotesk, sans-serif" font-size="14.5" font-weight="600" fill="#e6f1ff" text-anchor="middle" >Chat message</text>
+<text x="135.0" y="379" font-family="Inter, sans-serif" font-size="12.5" font-weight="500" fill="#6f8aa8" text-anchor="middle" >React UI</text>
+<line x1="216" y1="363" x2="248" y2="363" stroke="#22d3ee" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="252" y="326" width="150" height="74" rx="10" fill="#0f2447" stroke="#2a6ea0" stroke-width="1.2"/>
+<text x="327.0" y="358" font-family="Space Grotesk, sans-serif" font-size="14.5" font-weight="600" fill="#e6f1ff" text-anchor="middle" >Rule-based intent</text>
+<text x="327.0" y="379" font-family="Inter, sans-serif" font-size="12.5" font-weight="500" fill="#6f8aa8" text-anchor="middle" >Flask API</text>
+<line x1="408" y1="363" x2="440" y2="363" stroke="#22d3ee" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="444" y="326" width="150" height="74" rx="10" fill="#0f2447" stroke="#2a6ea0" stroke-width="1.2"/>
+<text x="519.0" y="358" font-family="Space Grotesk, sans-serif" font-size="14.5" font-weight="600" fill="#e6f1ff" text-anchor="middle" >Transaction saved</text>
+<text x="519.0" y="379" font-family="Inter, sans-serif" font-size="12.5" font-weight="500" fill="#6f8aa8" text-anchor="middle" >Firebase</text>
+<text x="60" y="438" font-family="Inter, sans-serif" font-size="13" font-weight="400" fill="#6f8aa8" text-anchor="start" >Anything that isn't a transaction goes to Groq.</text>
+<rect x="60.0" y="472" width="56.0" height="26" rx="13" fill="#0f2447" stroke="#2a6ea0" stroke-width="1"/><text x="88.0" y="489.5" font-family="Inter, sans-serif" font-size="12.5" font-weight="500" fill="#e6f1ff" text-anchor="middle" >React</text><rect x="124.0" y="472" width="45.5" height="26" rx="13" fill="#0f2447" stroke="#2a6ea0" stroke-width="1"/><text x="146.7" y="489.5" font-family="Inter, sans-serif" font-size="12.5" font-weight="500" fill="#e6f1ff" text-anchor="middle" >Vite</text><rect x="177.4" y="472" width="53.3" height="26" rx="13" fill="#0f2447" stroke="#2a6ea0" stroke-width="1"/><text x="204.1" y="489.5" font-family="Inter, sans-serif" font-size="12.5" font-weight="500" fill="#e6f1ff" text-anchor="middle" >Flask</text><rect x="238.8" y="472" width="51.2" height="26" rx="13" fill="#0f2447" stroke="#2a6ea0" stroke-width="1"/><text x="264.4" y="489.5" font-family="Inter, sans-serif" font-size="12.5" font-weight="500" fill="#e6f1ff" text-anchor="middle" >Groq</text><rect x="298.0" y="472" width="73.5" height="26" rx="13" fill="#0f2447" stroke="#2a6ea0" stroke-width="1"/><text x="334.7" y="489.5" font-family="Inter, sans-serif" font-size="12.5" font-weight="500" fill="#e6f1ff" text-anchor="middle" >Firebase</text>
+<rect x="60.0" y="506" width="146.9" height="26" rx="13" fill="#0f2447" stroke="#2a6ea0" stroke-width="1"/><text x="133.5" y="523.5" font-family="Inter, sans-serif" font-size="12.5" font-weight="500" fill="#e6f1ff" text-anchor="middle" >Tesseract.js bill scan</text>
+<line x1="60" y1="554" x2="588" y2="554" stroke="#1b3f68" stroke-width="1"/>
+<text x="60" y="582" font-family="Inter, sans-serif" font-size="13" font-weight="400" fill="#6f8aa8" text-anchor="start" >github.com/Saravana-31/Smart-Spend</text>
+<rect x="640" y="76" width="528" height="168" rx="14" fill="#0b1a33" stroke="#1b3f68" stroke-width="1.2"/>
+<rect x="640" y="94" width="4" height="28" rx="2" fill="#a78bfa"/>
+<text x="662" y="116" font-family="Space Grotesk, sans-serif" font-size="20" font-weight="700" fill="#a78bfa" text-anchor="start" >2</text>
+<text x="686" y="116" font-family="Inter, sans-serif" font-size="13.5" font-weight="600" fill="#a78bfa" text-anchor="start" >Team contribution</text>
+<text x="662" y="152" font-family="Space Grotesk, sans-serif" font-size="23" font-weight="700" fill="#e6f1ff" text-anchor="start" letter-spacing="-0.3">Mahamitra</text>
+<text x="662" y="174" font-family="Inter, sans-serif" font-size="13.5" font-weight="400" fill="#9fb3c8" text-anchor="start" >Client e-commerce platform by Sanjay N at Neovate. My part: feature</text><text x="662" y="192" font-family="Inter, sans-serif" font-size="13.5" font-weight="400" fill="#9fb3c8" text-anchor="start" >development and testing.</text>
+<rect x="662.0" y="208" width="56.0" height="26" rx="13" fill="#0f2447" stroke="#2a6ea0" stroke-width="1"/><text x="690.0" y="225.5" font-family="Inter, sans-serif" font-size="12.5" font-weight="500" fill="#e6f1ff" text-anchor="middle" >React</text><rect x="726.0" y="208" width="87.0" height="26" rx="13" fill="#0f2447" stroke="#2a6ea0" stroke-width="1"/><text x="769.5" y="225.5" font-family="Inter, sans-serif" font-size="12.5" font-weight="500" fill="#e6f1ff" text-anchor="middle" >TypeScript</text><rect x="821.0" y="208" width="81.6" height="26" rx="13" fill="#0f2447" stroke="#2a6ea0" stroke-width="1"/><text x="861.7" y="225.5" font-family="Inter, sans-serif" font-size="12.5" font-weight="500" fill="#e6f1ff" text-anchor="middle" >Supabase</text><rect x="910.5" y="208" width="78.4" height="26" rx="13" fill="#0f2447" stroke="#2a6ea0" stroke-width="1"/><text x="949.7" y="225.5" font-family="Inter, sans-serif" font-size="12.5" font-weight="500" fill="#e6f1ff" text-anchor="middle" >Razorpay</text>
+<rect x="640" y="258" width="528" height="168" rx="14" fill="#0b1a33" stroke="#1b3f68" stroke-width="1.2"/>
+<rect x="640" y="276" width="4" height="28" rx="2" fill="#60a5fa"/>
+<text x="662" y="298" font-family="Space Grotesk, sans-serif" font-size="20" font-weight="700" fill="#60a5fa" text-anchor="start" >3</text>
+<text x="686" y="298" font-family="Inter, sans-serif" font-size="13.5" font-weight="600" fill="#60a5fa" text-anchor="start" >Prototype</text>
+<text x="662" y="334" font-family="Space Grotesk, sans-serif" font-size="23" font-weight="700" fill="#e6f1ff" text-anchor="start" letter-spacing="-0.3">SaviAI</text>
+<text x="662" y="356" font-family="Inter, sans-serif" font-size="13.5" font-weight="400" fill="#9fb3c8" text-anchor="start" >Interview preparation: aptitude, coding practice and AI mock interviews on</text><text x="662" y="374" font-family="Inter, sans-serif" font-size="13.5" font-weight="400" fill="#9fb3c8" text-anchor="start" >local models.</text>
+<rect x="662.0" y="390" width="63.7" height="26" rx="13" fill="#0f2447" stroke="#2a6ea0" stroke-width="1"/><text x="693.8" y="407.5" font-family="Inter, sans-serif" font-size="12.5" font-weight="500" fill="#e6f1ff" text-anchor="middle" >Next.js</text><rect x="733.7" y="390" width="81.0" height="26" rx="13" fill="#0f2447" stroke="#2a6ea0" stroke-width="1"/><text x="774.1" y="407.5" font-family="Inter, sans-serif" font-size="12.5" font-weight="500" fill="#e6f1ff" text-anchor="middle" >MongoDB</text><rect x="822.6" y="390" width="78.1" height="26" rx="13" fill="#0f2447" stroke="#2a6ea0" stroke-width="1"/><text x="861.7" y="407.5" font-family="Inter, sans-serif" font-size="12.5" font-weight="500" fill="#e6f1ff" text-anchor="middle" >NextAuth</text><rect x="908.8" y="390" width="80.1" height="26" rx="13" fill="#0f2447" stroke="#2a6ea0" stroke-width="1"/><text x="948.8" y="407.5" font-family="Inter, sans-serif" font-size="12.5" font-weight="500" fill="#e6f1ff" text-anchor="middle" >llama.cpp</text>
+<rect x="640" y="440" width="528" height="168" rx="14" fill="#0b1a33" stroke="#1b3f68" stroke-width="1.2"/>
+<rect x="640" y="458" width="4" height="28" rx="2" fill="#34d399"/>
+<text x="662" y="480" font-family="Space Grotesk, sans-serif" font-size="20" font-weight="700" fill="#34d399" text-anchor="start" >4</text>
+<text x="686" y="480" font-family="Inter, sans-serif" font-size="13.5" font-weight="600" fill="#34d399" text-anchor="start" >Full-stack prototype</text>
+<text x="662" y="516" font-family="Space Grotesk, sans-serif" font-size="23" font-weight="700" fill="#e6f1ff" text-anchor="start" letter-spacing="-0.3">BidBank</text>
+<text x="662" y="538" font-family="Inter, sans-serif" font-size="13.5" font-weight="400" fill="#9fb3c8" text-anchor="start" >Auction site with listings, validated bidding, countdown timers and a bid</text><text x="662" y="556" font-family="Inter, sans-serif" font-size="13.5" font-weight="400" fill="#9fb3c8" text-anchor="start" >feed.</text>
+<rect x="662.0" y="572" width="56.0" height="26" rx="13" fill="#0f2447" stroke="#2a6ea0" stroke-width="1"/><text x="690.0" y="589.5" font-family="Inter, sans-serif" font-size="12.5" font-weight="500" fill="#e6f1ff" text-anchor="middle" >React</text><rect x="726.0" y="572" width="69.6" height="26" rx="13" fill="#0f2447" stroke="#2a6ea0" stroke-width="1"/><text x="760.8" y="589.5" font-family="Inter, sans-serif" font-size="12.5" font-weight="500" fill="#e6f1ff" text-anchor="middle" >Express</text><rect x="803.6" y="572" width="81.0" height="26" rx="13" fill="#0f2447" stroke="#2a6ea0" stroke-width="1"/><text x="844.1" y="589.5" font-family="Inter, sans-serif" font-size="12.5" font-weight="500" fill="#e6f1ff" text-anchor="middle" >MongoDB</text>
 </svg>
